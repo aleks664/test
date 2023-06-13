@@ -39,17 +39,18 @@ const formsValidate = (selector) => {
 }
 const scrollAnimate = () => {
     $('[data-animate]').each(function (){
-        let wScrTop = $(window).scrollTop() + $(window).height()  - ($(window).height() / 3);
+        let wScrTop = $(window).scrollTop() + $(window).height()  - ($(window).height() / 4);
         let top = $(this).offset().top;
         let animate = $(this).data('animate');
         let duration = $(this).data('duration');
-        console.log($(this) , 'top-',top, ' scrTop = ', wScrTop)
+        let delay = $(this).data('delay') || 0;
         if ( wScrTop > top ) {
 
             $(this).css({
                 animationFillMode: 'both',
                 animationDuration: duration,
                 animationName: animate,
+                animationDelay: delay,
             })
         }
     });

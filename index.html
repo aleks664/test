@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site name</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+<header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand me-0" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarCollapse">
+                <ul class="navbar-nav" id="navbar">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#s-about">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s-contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s-callback">Напишите нам</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+
+    <section  class="s-about pt-5 pb-5"  id="s-about">
+        <picture class="s-main-banner__picture">
+            <source media="(min-width: 992px)" srcset="images/main.webp 1x, images/main@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 991px) and (min-width: 768px)"
+                    srcset="images/main-m.webp 1x, images/main-m@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="images/main-s.webp 1x, images/main-s@2x.webp 2x"
+                    type="image/webp">
+            <source media="(min-width: 992px)" srcset="images/main.jpg 1x, images/main@2x.jpg 2x" type="image/jpeg">
+            <source media="(max-width: 991px) and (min-width: 768px)"
+                    srcset="images/main-m.jpg 1x, images/main-m@2x.jpg 2x" type="image/jpeg">
+            <img class="bg"  src="images/main-s.webp"
+                 srcset="images/main-s.jpg 1x, images/main-s@2x.jpg 2x" alt="Название картинки" >
+        </picture>
+        <div class="py-5 container text-center" data-animate="fadeInUp" data-duration="1s">
+            <h1>О компании</h1>
+            <div class="col-lg-8 mx-auto">
+                <div class="lead">
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aspernatur at
+                        commodi deleniti distinctio dolorem expedita fugiat laboriosam libero molestiae nam
+                        necessitatibus, officiis quo reiciendis sunt tempore. Animi, quasi.
+                    </div>
+                    <div>Ab ad adipisci atque corporis culpa cum debitis ducimus expedita impedit incidunt laboriosam
+                        magnam molestias nesciunt numquam officia provident quibusdam quisquam ratione reiciendis
+                        repellat rerum unde veritatis, vitae? Sequi, voluptatibus.
+                    </div>
+                    <div>A consectetur culpa cumque cupiditate debitis dicta error eum, id magnam modi nobis officiis
+                        perferendis praesentium quaerat qui quia recusandae reiciendis repudiandae sapiente sed sint sit
+                        totam unde veritatis vitae.
+                    </div>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="s-contacts  pt-5" data-animate="fadeInUp" id="s-contacts">
+        <div class="container pt-5 pb-5">
+            <h2>Контакты</h2>
+            <div class="row mt-3 mt-md-4">
+                <div class="col-md-6 d-flex" data-animate="fadeInLeft" data-duration="1s">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid me-2 fa-user"></i>Contact title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti doloremque, ducimus ipsum, iusto mollitia neque porro qui reprehenderit repudiandae sapiente, sint tempora ut vero voluptates. Commodi corporis nemo qui?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex" data-animate="fadeInRight" data-duration="1s">
+                    <div class="card mt-5 mt-md-0">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid me-2 fa-user"></i>Contact title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti doloremque, ducimus ipsum, iusto mollitia neque porro qui reprehenderit repudiandae sapiente, sint tempora ut vero voluptates. Commodi corporis nemo qui?prehenderit repudiandae sapiente, sint tempora ut vero voluptates. Commodi corporis nemo qui?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s-callback pt-5 pb-5" id="s-callback">
+        <div class="container">
+
+            <form class="row  mt-3 mt-md-4 justify-content-center needs-validation" novalidate="">
+                <div class="col-md-8 row ">
+                    <div class="col-12">
+                        <h2 class="mb-3">Форма обратной связи</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="validationCustom01" class="form-label">Имя</label>
+                            <input required type="text" class="form-control" id="validationCustom01"  required="">
+                            <div class="invalid-feedback">
+                                Введите ваше имя
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="validationCustom02" class="form-label">Email</label>
+                            <input required type="email" class="form-control" id="validationCustom02"  required="">
+                            <div class="invalid-feedback">
+                                Email некоректен!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group mb-3">
+                            <label for="validationCustom03" class="form-label">Сообщение</label>
+                            <textarea required id="validationCustom03"  class="form-control" cols="30" rows="5"></textarea>
+                            <div class="invalid-feedback">
+                                Напишите сообщение
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-primary btn-lg" type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+<footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light m-1" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light m-1" href="#" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light m-1" href="#" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light m-1" href="#" role="button"><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline-light m-1" href="#" role="button"><i class="fab fa-instagram"></i></a>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="#">sitename.com</a>
+    </div>
+</footer>
+<div id="thank-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ваше сообщение отправлено</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
